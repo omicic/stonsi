@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+:root {
+    --red: rgba(134, 54, 65, .6);
+    --brown: rgba(60, 21, 26, .6);
+    --footer: rgba(94, 38, 45.6);
+    --text: rgb(243, 240, 240);
+    --white: #fff;
+    --paddingY: 20px;
+    --transition: .2s ease;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Abel', sans-serif;
+    background: linear-gradient(rgba(134, 54, 65, 0.589),
+            rgba(134, 54, 65, 0.582)), url(img/bg.jpg);
+    line-height: 1.5;
+    font-size: 16px;
+    color: var(--text);
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    background: var(--text);
+    padding: 10px 20px;
+    color: var(--red);
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+button:hover {
+    background: var(--brown);
+    color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-weight: 500;
+}
+
+/***flex***/
+.flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flexSpaceAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 20%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--white);
+
+}
+
+/***nav***/
+nav {
+    background: var(--brown);
+    margin-top: 150px;
+    padding: 30px 300px;
+}
+
+nav article {}
+
+nav article:nth-child(1),
+nav article:nth-child(3) {
+    flex: 0 0 20%;
+}
+
+nav article:nth-child(2) {
+    flex: 0 0 55%;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 40%;
+
+}
+
+/***newalbum***/
+.newalbum {
+    padding-top: 200px;
+}
+
+.newalbum .citat p {
+    text-align: center;
+}
+
+.newalbum .opis {
+    background: var(--brown);
+    margin: 30px 0;
+    padding: 50px;
+}
+
+.newalbum .opis div:first-child {
+    flex: 0 0 40%;
+}
+
+.newalbum .opis div:last-child {
+    flex: 0 0 57%;
+}
+
+.newalbum .opis img {
+    padding-top: 20px;
+}
